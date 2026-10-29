@@ -17,7 +17,7 @@ $u_{h} (x) = U_{1}\psi_{1}(x) + U_{2}\psi_{2}(x)$.
 
 __Matlab is not permitted for this exercise.__ Select one answer per part.
 Numerical choices are rounded to five decimal places. An incorrect choice
-substracts 25% of the points for that part. Select "Empty answer (no 
+subtracts 25% of the points for that part. Select "Empty answer (no 
 penalty)' to receive zero points without penalty.
 
 (a) (2 points) Compute $K_{11}$, the $(1,1)$ entry of the stiffness matrix,
