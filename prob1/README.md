@@ -49,7 +49,7 @@ U_{1} + U_{2}\right) / 2$.
 
 (d) (2 points) The exact solution is 
 $u(x) = -4\arctan (x) - \ln\left(1 + x^{2}\right)$. At which point in
-$[0, 1]$ does the absolute error $\left|u(x) - u_{h}(x)|$ attain its
+$[0, 1]$ does the absolute error $\left|u(x) - u_{h}(x)\right|$ attain its
 maximum? Select the coordinate $x$. 
 
 - [ ] `1.00000`
