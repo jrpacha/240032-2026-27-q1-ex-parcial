@@ -27,11 +27,11 @@ $K$, before imposing boundary conditions.
 - [ ] `1.00000`
 - [ ] `2.66667`
 - [ ] `0.66667`
-- [ ] Empty answer (no penalty)
+- [ ] `Empty answer (no penalty)`
 
 (b) (2 points) Compute the source load $F_{1}$.
 
-- [ ] Empty answer (no penalty)
+- [ ] `Empty answer (no penalty)`
 - [ ] `2.00000`
 - [ ] `-1.00000`
 - [x] `1.00000`
@@ -43,7 +43,7 @@ U_{1} + U_{2}\right) / 2$.
 
 - [ ] `-3.75000`
 - [ ] `-0.93750`
-- [ ] Empty answer (no penalty)
+- [ ] `Empty answer (no penalty)`
 - [x] `-1.87500`
 - [ ] `1.87500`
 
@@ -53,7 +53,7 @@ $[0, 1]$ does the absolute error $\left|u(x) - u_{h}(x)\right|$ attain its
 maximum? Select the coordinate $x$. 
 
 - [ ] `1.00000`
-- [ ] Empty answer (no penalty)
+- [ ] `Empty answer (no penalty)`
 - [ ] `0.13789`
 - [ ] `0.00000`
 - [x] `0.63785`

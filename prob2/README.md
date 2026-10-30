@@ -1,80 +1,60 @@
-# Final Exam. Course 2026-27 Q1
+# Midterm Exam. Course 2026-27 Q1
 
 ## Problem 2
-Answer the following questions about the two dimensional finite element
-method. The equation to be considered is
-
+Consider the mesh called `meshEscaire2foratsTirang`. Let 
+$p_{0} = (-1.4,3.4)$ and assign the following _distasnce value_ to each 
+node $v:$
 $$
--\frac{\partial}{\partial x}\left(%
-a_{11}\frac{\partial u}{\partial x}
-\right) - \frac{\partial}{\partial y}\left(
-a_{22}\frac{\partial u}{\partial y}
-\right) = 0, 
+f(v) = \| v - p_{0}\|,
 $$
+that is, $f(v)$ is the distance from $v$ to $p_{0}$.
 
-with the domain and values $a_{11}$, $a_{22}$ provided in the questions.
+__Hint:__ In Matlab, the distance from $v$ to $p_{0}$ is computed with 
+`norm(v - p0)`.
 
-__Note.__ Questions sets (a,b,c,d) and (f,g) are independent problems.
-Questions a, b, c, d and f do not require any prior computations.
+(a) (2points) The farthest (most distant) node from $p_{0}$ is node number:
 
-(a) (2 points) Consider the meshed domain: `nodes = [0 0; 1 0; 1 1; 2 0]`,
-`elem = [1 2 3; 3 2 4]` with  $a_{11} = a_{22} = 1$ in $\Omega^{1}$ and,
-$a_{11} = 3$, $a_{22} = 1$ in $\Omega^{2}$. The value $K_{1,2}$ in the
-assembled matrix is
-- [ ] `-3/2`
-- [x] `-1/2`
-- [ ] `-2`
-- [ ] `-1`
-- [ ] Leave it empty (no penalty)
+- [ ] `85`
+- [ ] `84`
+- [x] `82`
+- [ ] `81`
+- [ ] `83` 
+- [ ] `Empty answer (no penalty)`
 
-(b) (1 point) Same setting as in question (a). The value $K_{2,2}$ in the
-assembled system is
-- [ ] Leave it empty (no penalty)
-- [x] `3`
-- [ ] `6`
-- [ ] `5`
-- [ ] `4`
+__Hint:__ The command `[M,I] = max(A)` returns the maximum element `M` and 
+its index `I`.
 
-\(c\) (2 points) Continue in the same setting. Consider the boundary
-conditions $u(x,y) = 1 - y$ in $\overline{1,3}$; $u(x,y)\equiv 0$ in $\overline{3,4}$;
-$\dfrac{\partial u}{\partial y}(x,y) = -u$ in $\overline{1,2}$ and, $\dfrac{\partial
-u}{\partial y}(x,y) \equiv -2$ in $\overline{2,4}$. Given that $Q_{2,1}^{1} = A U_{2} +
-B$, the value of $A$ is
-- [ ] Leave it empty (no penalty)
-- [ ] `2/3`
-- [x] `1/3`
-- [ ] `1`
-- [ ] `4/3`
+(b) (4 points) Interpolate the function $f$ at the point $p = (5.1, 2.9)$. 
+The interpolated value is:
 
-(d) (1 point) With the same boundary conditions as in \(c\). The value of
-$Q^{2}_{2,2}$ is
-- [ ] `3`
-- [x] `1`
-- [ ] Leave it empty (no penalty)
-- [ ] `2`
-- [ ] `3/2`
+- [ ] `6.4478e+00`
+- [ ] `6.5848e+00`
+- [ ] `Empty answer (no penalty)`
+- [x] `6.5196e+00`
+- [ ] `6.4413e+00`
 
-(e) (1 point) The approximate value of $u(1,0)$ for the problem defined in
-(a)--\(c\) is
-- [ ] Leave it empty (no penalty)
-- [ ] `1`
-- [ ] `17/14`
-- [x] `5/8` 
-- [ ] `17/20`
+(c) (2 points) Given a triangular element, its barycenter $g$ has 
+barycentric coordinates $(1/3, 1/3, 1/3)$. Find the barycenter of the 
+element number $7$ in the mesh:
 
-(f) (2 points) Consider the rectangular element $\Omega^{k} = [0,6]\times
-[0,2]$ with local node number $1$ in $(0,0)$. The value of
-$\psi^{k}_{3}\left(1/2,1\right)$ is
-- [ ] `1/8`
-- [ ] `1/12`
-- [ ] Leave it empty (no penalty)
-- [x] `1/24`
-- [ ] `1/4`
+- [ ] `(4.6400e+00, 6.2143e-01)`
+- [ ] `Empty answer (no penalty)`
+- [ ] `(4.5369e+00, 6.0762e-01)`
+- [ ] `(5.6196e+00, 7.5262e-01)`
+- [x] `(5.1556e+00, 6.9048e-01)`
 
-(g) (1 point) Consider $a_{11}(x,y)\equiv 3$ and $a_{22}(x,y) = x + 1$. The
-value of $K^{k}_{3,3}$ for $\Omega^{k}$ in (f) is 
-- [ ] `34/6`
-- [x] `35/6`
-- [ ] `37/6`
-- [ ] `38/6`
-- Leave it empty (no penalty)
+(d) (2 points) Given a triangular element with barycenter $g$, define it
+_interpolation error_ as the difference between the interpolated value of 
+$f$ at $g$. The interpolation error for element number $7$ in the mesh is:
+
+- [ ] `4.0937e-03`
+- [ ] `4.0568e-03`
+- [ ] `Empty answer (no penalty)`
+- [x] `3.6880e-03`
+- [ ] `3.9831e-03`
+ 
+
+
+
+  
+
