@@ -43,7 +43,7 @@ element number $7$ in the mesh:
 - [ ] `(5.6196e+00, 7.5262e-01)`
 - [x] `(5.1556e+00, 6.9048e-01)`
 
-(d) (2 points) Given a triangular element with barycenter $g$, define it
+(d) (2 points) Given a triangular element with barycenter $g$, define its
 _interpolation error_ as the difference between the interpolated value of 
 $f$ at $g$. The interpolation error for element number $7$ in the mesh is:
 
