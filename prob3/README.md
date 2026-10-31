@@ -2,9 +2,11 @@
 
 ## Problem 3
 Consider the following problem:
+
 $$
 2 u - 4 u'' - 3 x - 3 = 0
 $$
+
 $x\in [4, 6]$ with $u(4) = 2$ and $u(6) = 7$, and $150$ linear
 elements.
 
