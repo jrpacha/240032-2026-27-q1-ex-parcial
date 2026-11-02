@@ -41,8 +41,8 @@ e = 149;
 indexF = 38;
 
 %Item (a)
-fprintf("Question (a) The derivative of the first shape function " + ... %[output:group:22b89d2b] %[output:0f59c81a]
-    "of the element %d is: %.4e", e, -1.0 / h); %[output:group:22b89d2b] %[output:0f59c81a]
+fprintf("Question (a) The derivative of the first shape function " + ... %[output:group:22b89d2b] %[output:6cb5b6d1]
+    "of the element %d is: %.4e", e, -1.0 / h); %[output:group:22b89d2b] %[output:6cb5b6d1]
 %[text] (b) (2 points) The sum of the diagonal of matrix $K$ is:
 %[text] - `9.0003e+04 ✔️`
 %[text] - `8.9556e+04`
@@ -69,7 +69,7 @@ for e = 1:numelem
     F(rows) = F(rows) + Fe;
 end
 
-fprintf("Question (b) sum of the diagonal of matrix K: %.4e", sum(diag(K))); %[output:0dca618b]
+fprintf("Question (b) sum of the diagonal of matrix K: %.4e", sum(diag(K))); %[output:4bbafac9]
 %[text] c) (2 points) The value of $F\_{38}$ is:
 %[text] - Empty answer (no penalty)
 %[text] - `2.1870e-01`
@@ -78,7 +78,7 @@ fprintf("Question (b) sum of the diagonal of matrix K: %.4e", sum(diag(K))); %[o
 %[text] - `2.2025e-01`
 %[text] - `2.1973e-01 ✔️` \
 %Item (c)
-fprintf("Question (c) F(%d) = %.4e\n",indexF, F(indexF)) %[output:5ee6d110]
+fprintf("Question (c) F(%d) = %.4e\n",indexF, F(indexF)) %[output:84533b21]
 %[text] (d) (2 points) Before imposing the boundary conditions, the global stiffness matrix obtained from the finite element discretization of the problem above is:
 %[text] - Empty answer (no penalty)
 %[text] - Symmetric only because linear elements are polynomials of degree 1
@@ -87,7 +87,7 @@ fprintf("Question (c) F(%d) = %.4e\n",indexF, F(indexF)) %[output:5ee6d110]
 %[text] - Non-symmetric
 %[text] - Symmetric only because the number of elements is even \
 %Item (d)
-fprintf("Question (d) Symmetric for linear and quadratic elements") %[output:2ac3f1c5]
+fprintf("Question (d) Symmetric for linear and quadratic elements") %[output:596c2910]
 %[text] (e) (3 points) The mean value of the solution is:
 %[text] - `5.1447e+00`
 %[text] - `5.0809e+00`
@@ -115,26 +115,26 @@ Km = K(freenods, freenods);
 um = Km \ Fm;
 u(freenods) = um;
 
-fprintf("Question (e) The mean value of the solution T is, <T> = %.4e", ... %[output:group:8170a776] %[output:4e6fc48a]
-    sum(u) / numnodes) %[output:group:8170a776] %[output:4e6fc48a]
+fprintf("Question (e) The mean value of the solution T is, <T> = %.4e", ... %[output:group:8170a776] %[output:77abba1b]
+    sum(u) / numnodes) %[output:group:8170a776] %[output:77abba1b]
 
 %[appendix]{"version":"1.0"}
 %---
 %[metadata:view]
 %   data: {"layout":"inline","rightPanelPercent":40}
 %---
-%[output:0f59c81a]
+%[output:6cb5b6d1]
 %   data: {"dataType":"text","outputData":{"text":"Question (a) The derivative of the first shape function of the element 149 is: -7.5000e+01","truncated":false}}
 %---
-%[output:0dca618b]
+%[output:4bbafac9]
 %   data: {"dataType":"text","outputData":{"text":"Question (b) sum of the diagonal of matrix K: 9.0003e+04","truncated":false}}
 %---
-%[output:5ee6d110]
-%   data: {"dataType":"text","outputData":{"text":"Querstion (c) F(38) = 2.1973e-01\n","truncated":false}}
+%[output:84533b21]
+%   data: {"dataType":"text","outputData":{"text":"Question (c) F(38) = 2.1973e-01\n","truncated":false}}
 %---
-%[output:2ac3f1c5]
+%[output:596c2910]
 %   data: {"dataType":"text","outputData":{"text":"Question (d) Symmetric for linear and quadratic elements","truncated":false}}
 %---
-%[output:4e6fc48a]
+%[output:77abba1b]
 %   data: {"dataType":"text","outputData":{"text":"Question (e) The mean value of the solution T is, <T> = 5.1211e+00","truncated":false}}
 %---
