@@ -1,6 +1,7 @@
 # Midterm Exam. Course 2026-27 Q1
 
 ## Problem 3
+
 Consider the following problem:
 
 $$
@@ -10,7 +11,7 @@ $$
 $x\in [4, 6]$ with $u(4) = 2$ and $u(6) = 7$, and $150$ linear
 elements.
 
-(a) (1 point) The value of 
+(a) (1 point) The value of
 $\frac{\mathrm{d}\psi_{1}^{149}}{\mathrm{d} x}(x)$ is:
 
 - [x] `-7.5000e+01`
@@ -39,18 +40,18 @@ $\frac{\mathrm{d}\psi_{1}^{149}}{\mathrm{d} x}(x)$ is:
 - [ ] `2.2025e-01`
 - [x] `2.1973e-01`
 
-(c) (2 points) Before imposing the boundary conditions, the global 
-stiffness matrix obtained from the finite element discretization of 
-the problem above is: 
+(d) (2 points) Before imposing the boundary conditions, the global
+stiffness matrix obtained from the finite element discretization of
+the problem above is:
 
 - [ ] `Empty answer (no penalty)`
 - [ ] `Symmetric only because linear elements are polynomials of degree 1`
-- [x] `Symmetric for linear and quadratic elements` 
+- [x] `Symmetric for linear and quadratic elements`
 - [ ] `Diagonal`
 - [ ] `Non-symmetric`
 - [ ] `Symmetric only because the number of elements is even`
 
-(e) (3 points) The mean value of the solution is: 
+(e) (3 points) The mean value of the solution is:
 
 - [ ] `5.1447e+00`
 - [ ] `5.0809e+00`
